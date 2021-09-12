@@ -1,0 +1,11 @@
+.column2{
+    top:80px;
+    position:sticky;
+    flex:0.3;
+    margin-left: 20px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    height:fit-content;
+    border:2px solid white;
+}
