@@ -2,7 +2,6 @@
 # SuperSlot React JS Trello APP
 
 ![SuperSlot React JS  Trello](webpage-image.png?raw=true "SuperSlot React JS Trello App")</br>
-![](webpage-image.png?raw=true "SuperSlot React JS  Trello APP")
 
 ### <a href="https://trello-saurabh-54ff32.netlify.app/">LIVE DEMO</a>
 
