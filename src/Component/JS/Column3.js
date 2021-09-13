@@ -22,10 +22,11 @@ function Column3() {
           <FlipMove>
             {done.map((item) => (
               <Post
+                key={item.id}
                 id={item.id}
                 title={item.title}
                 name={item.name}
-                description={item.descri}
+                description={item.description}
                 message={item.message}
               />
             ))}

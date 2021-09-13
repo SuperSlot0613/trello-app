@@ -1,15 +1,13 @@
 .editcard {
-    margin: auto;
-    margin-top: 100px;
     left: 400px;
+    top:20px;
     padding-top: 10px;
     background: linear-gradient(120deg, #2980b9, #8e44ad);
     height: 600px;
     width: 500px;
     /* overflow: hidden; */
-    z-index: 999;
+    z-index: 999 !important;
     position: fixed;
-    /* transition: all 0.5s; */
   }
   
   .addcard > h1 {

@@ -3,18 +3,20 @@
   margin-top: 100px;
   left: 400px;
   padding-top: 10px;
-  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  background: linear-gradient(120deg, #006ab1, #753e8d);
   height: 600px;
   width: 500px;
   /* overflow: hidden; */
   z-index: 999;
   position: fixed;
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
+  border-radius:10px;
 }
 
 .addcard > h1 {
   margin: auto;
   text-align: center;
+  color:white;
 }
 
 form {
@@ -31,18 +33,21 @@ form .txt_field {
   padding: 0 5px;
   height: 40px;
   font-size: 16px;
+  font-weight: 600;
   border: none;
   background: none;
   outline: none;
+  color:white;
 }
 .txt_field label {
   position: absolute;
   top: 50%;
   left: 5px;
-  color: #adadad;
+  color:white;
   transform: translateY(-50%);
   font-size: 16px;
-  pointer-events: none;
+  font-weight: 700;
+  /* pointer-events: none; */
   transition: 0.5s;
 }
 .txt_field span::before {
@@ -58,7 +63,7 @@ form .txt_field {
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label {
   top: -5px;
-  color: #2691d9;
+  color: white;
 }
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before {
@@ -66,7 +71,7 @@ form .txt_field {
 }
 .pass {
   margin: -5px 0 20px 5px;
-  color: #a6a6a6;
+  color: white;
   cursor: pointer;
 }
 .pass:hover {

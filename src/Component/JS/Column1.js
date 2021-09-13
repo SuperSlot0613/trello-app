@@ -18,15 +18,17 @@ function Column1() {
           </IconButton>
         </div>
         <div className="column_post">
-        {todo.map((item) => (
-        <Post 
-         id={item.id}
-         title={item.title}
-         name={item.name}
-         description={item.descri}
-         message={item.message}
-         />
-      ))}
+          {todo.map((item) => (
+            <Post
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              name={item.name}
+              description={item.description}
+              message={item.message}
+              column={item.column}
+            />
+          ))}
         </div>
       </div>
     </div>

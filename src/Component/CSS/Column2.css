@@ -1,6 +1,6 @@
 .column2{
     top:80px;
-    position:sticky;
+    /* position:sticky; */
     flex:0.35;
     margin-left: 25px;
     padding:20px;
@@ -26,11 +26,13 @@
 .column_title>h1{
     padding-left:10px;
     font-size:18px;
-    font-weight: 500;
+    font-weight: 700;
+    color:white;
 }
 
 .column_title > .icons{
     margin-left:200px;
     font-size:25px !important;
     width: 50px;
+    color:white !important;
 }

@@ -21,10 +21,11 @@ function Column2() {
         <div className="column_post">
           {doing.map((item) => (
             <Post
+              key={item.id}
               id={item.id}
               title={item.title}
               name={item.name}
-              description={item.descri}
+              description={item.description}
               message={item.message}
             />
           ))}

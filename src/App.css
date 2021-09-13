@@ -1,45 +1,48 @@
 .App {
-  background-color: #f3f2ef;
+  background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2286x1600/24baa6609b89fb8eb0cc0aceb70eaf36/photo-1557682250-33bd709cbe85.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-.appcard{
-  z-index:999;
-  position:relative;
+.appcard {
+  z-index: 999;
+  position: relative;
 }
 
 .app_body {
-  z-index:10;
+  z-index: 1;
   display: flex;
   margin-top: 70px;
   max-width: 1200px;
   margin-left: 20px;
   margin-right: 20px;
   /* position:fixed; */
-  background-color: #f3f2ef;
 }
 
-.Card_add{
+.Card_add {
   align-items: center;
-  margin-left:45%;
-  padding-top:30px;
+  margin-left: 45%;
+  padding-top: 30px;
 }
 
-.add_btn{
+.add_btn {
   /* width:100px; */
-  padding:50px;
-  background-color:crimson !important;
-  color:white !important;
-  font-size:16px !important;
+  padding: 50px;
+  background-color: crimson !important;
+  color: white !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
-  cursor:pointer;
+  cursor: pointer;
 }
-.cross_btn{
-  background-color:crimson !important;
-  color:white !important;
-  font-size:50px !important;
+.cross_btn {
+  background-color: crimson !important;
+  color: white !important;
+  font-size: 50px !important;
   font-weight: 600 !important;
   border-radius: 50% !important;
-  cursor:pointer;
+  cursor: pointer;
 }
