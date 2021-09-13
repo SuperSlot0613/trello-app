@@ -37,3 +37,21 @@
     display:flex;
     justify-content: space-evenly;
 }
+
+.InputOption{
+    display:flex;
+    align-items:center;
+    margin-top: 15px;
+    color:gray;
+    padding:6px;
+    cursor:pointer;
+}
+
+.InputOption:hover{
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
+
+.InputOption>h4{
+    margin-left: 5px;
+}

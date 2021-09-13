@@ -1,12 +1,20 @@
 import { Button } from "@material-ui/core";
 import React, { useState } from "react";
+import '../CSS/EditCard.css'
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { DOING, DONE, selectDOING, selectDONE, selectTODO, TODO } from "../../features/addCardSlice";
-import "../CSS/AddCard.css";
-import {v4} from "uuid"
+import {
+  DOING,
+  DONE,
+  selectDOING,
+  selectDONE,
+  selectTODO,
+  TODO,
+} from "../../features/addCardSlice";
 
-function AddCard() {
+
+function EditCard() {
+    
   const todo = useSelector(selectTODO);
   const doing = useSelector(selectDOING);
   const done = useSelector(selectDONE);
@@ -17,21 +25,9 @@ function AddCard() {
   const [column, setColumn] = useState("");
   const [id, setId] = useState("");
   const dispatch = useDispatch();
-  const Validate = () => {
-    // var regx = /[a-x]imple/;
-    // if (regx.test(title)) {
-      console.log(column)
-      setId(`${Math.floor(Math.random()*5000)}`);
-      if (column == 1) {
-        dispatch(TODO({id, name, title, descri, message, column }));
-      } else if (column == 2) {
-        dispatch(DOING({id, name, title, descri, message, column }));
-      } else if(column==3){
-        dispatch(DONE({id, name, title, descri, message, column }));
-      }
-  };
+
   return (
-    <div className="addcard">
+    <div className="editcard">
       <h1>ADD CARD</h1>
       <form>
         <div className="txt_field">
@@ -90,4 +86,4 @@ function AddCard() {
   );
 }
 
-export default AddCard;
+export default EditCard;
